@@ -500,7 +500,15 @@ footer .text p {
         position: fixed;
     }
 
+    .wrapper {
+        width: 340px;
+        position: absolute;
+        left: 0;
+    }
+
     .hamburger {
+        position: absolute;
+        left: 100%;
         display: block;
         padding-top: 17px;
     }
@@ -527,7 +535,7 @@ footer .text p {
     }
     
     .menu.active {
-        right: 2%;
+        right: -7%;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     }
 
