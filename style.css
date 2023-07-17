@@ -1,0 +1,710 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* START NAVBAR */
+
+
+
+.logo {
+    float: left;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    color: #0E8388;
+    padding: 0px 12px 0px 12px;
+}
+
+
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding-right: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 3px;
+    background-color: #0E8388;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 70px;
+    position: -webkit-sticky;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-align: center;
+    padding: 0px 12px 0px 12px;
+    color: #2C3333;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* END NAVBAR */
+
+/* START HOME */
+.beranda {
+    width: 1260px;
+    height: 580px;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-home {
+    width: 1/2;
+    margin: auto 0px;
+    position: relative;
+}
+
+.container-home > h1 {
+    color: #0E8388;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.container-home > h1 span p {
+    color: #2C3333;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container-home > h2 {    
+    color: #2C3333;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.container-home > p {
+    color: #2C3333;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.container-home > button {
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 7rem;
+    border-style: none;
+    background-color: #0E8388;
+    margin-top: 25px;
+}
+
+.container-home > button a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.container-home > button:hover {
+    background-color: rgba(0, 160, 160, 0.89);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container-image {
+    position: relative;
+    width: 1/2;
+}
+
+.photo img {
+    width: 500px;
+    height: 500px;
+    scale: 1.05;
+    margin: 15% auto;
+}
+
+.container-image::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 515px;
+    height: 200px;
+    bottom: -110px;
+    right: -7px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,212,255,0) 100%);
+}
+
+.container-image span svg {
+    width: 400px;
+    height: 400px;
+    margin: 5% auto;
+    margin-left: 5%;
+    position: absolute;
+    transform: scale(1.25);
+    bottom: 0;
+    z-index: -1;
+}
+/* END HOME */
+
+/* START ABOUT */
+.tentang {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container-about {
+    position: relative;
+    margin: 0 auto;
+    width: 1260px;
+}
+
+.container-about h1 {
+    color: #0E8388;
+}
+
+.container-about p {
+    margin-top: 10px;
+    color: #2C3333;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.container-about h2 {
+    margin-top: 2rem;
+    color: #0E8388;
+}
+
+.container-about article {
+    margin-top: 10px;
+    color: #2C3333;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style-position: inside;
+    margin-top: 1.5rem;
+    line-height: 37px;
+}
+
+.list-right {
+    margin-left: 30%;
+}
+
+.list-right ul li span {
+    color: dodgerblue;
+}
+
+.list-right ul li span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list ul li {
+    color: #2C3333;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.list > i {
+    margin-right: 5px;
+}
+/* END ABOUT */
+
+/* START PORTFOLIO */
+.portfolio {
+    width: 100%;
+    height: 1000px;
+    padding-top: 6rem;
+    background-color: rgb(241 245 249);
+}
+
+.container-prt {
+    position: relative;
+    margin: 0 auto;
+    bottom: 1rem;
+    width: 1260px;
+}
+
+.title {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.title h1 {
+    color: #0E8388;
+    text-align: center;
+}
+
+.title p {
+    color: #2C3333;
+    text-align: center;
+    font-size: 16px;
+}
+
+.wrapper-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 500px;
+    height: 400px;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.desk {
+    line-height: 40px;
+}
+
+.desk h4 {
+    font-size: 24px;
+}
+
+.desk h4 a{
+    text-decoration: none;
+    color: #2C3333;
+}
+
+.desk h4 a:hover{
+    color: #0E8388;
+    transition: 0.2s;
+}
+
+.desk p {
+    font-size: 16px;
+    line-height: normal;
+    color: slategray;
+}
+/* END PORTFOLIO */
+
+/* START CONTACT */
+.kontak {
+    width: 100%;
+    height: 580px;
+}
+
+.container-cntc {
+    position: relative;
+    margin: 0 auto;
+    width: 1260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kontak > h1 {
+    text-align: center;
+    color: #0E8388;
+    padding-top: 1rem;
+}
+
+.hubungi {
+    margin: 1rem;
+    width: 30%;
+}
+
+.tautan h1 {
+    color: #0E8388;
+}
+
+.tautan p {
+    color: #2C3333;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.sosmed {
+    display: flex;
+    gap: 0px 20px;
+    margin-top: 50px;
+}
+
+.sosmed .fa-brands {
+    border: 2px solid #0E8388;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.sosmed .fa-brands:hover {
+    background-color: #e6e6e6;
+    transition: 0.3s ease;
+}
+
+.formulir {
+    margin: 1rem;
+    width: 60%;
+}
+
+.formulir form label {
+    color: #0E8388;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.formulir form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #2C3333;
+    background-color: rgb(241 245 249);
+}
+
+.formulir form input:focus {
+    outline-color: #2fd4da;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #2C3333;
+}
+
+.formulir form textarea {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #2C3333;
+    background-color: rgb(241 245 249);
+}
+
+.formulir form textarea:focus {
+    outline-color: #2fd4da;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #2C3333;
+}
+
+.formulir form button {
+    width: 90%;
+    height: 2.5rem;
+    margin-top: 15px;
+    margin-left: 5%;
+    border-radius: 7rem;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0E8388;
+    cursor: pointer;
+}
+
+.formulir form button:hover {
+    background-color: rgba(0, 160, 160, 0.89);
+    transition: 0.3s ease;
+}
+/* END CONTACT */
+
+/* START FOOTER */
+footer {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+footer .text p {
+    color: #2C3333;
+    font-size: 14px;
+    font-style: normal;
+}
+/* END FOOTER */
+
+
+@media screen and (max-width: 430px) {
+    * {
+        scroll-padding: 8rem;
+    }
+
+    nav {
+        width: 100%;
+        height: 65px;
+        position: fixed;
+    }
+
+    .hamburger {
+        display: block;
+        padding-top: 17px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .menu {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        margin-top: 4.5rem;
+        border-radius: 5px;
+        right: -100%;
+        transition: 0.5s ease-in-out;
+        background-color: #0E8388;
+    }
+    
+    .menu.active {
+        right: 2%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    }
+
+    .menu ul li {
+        display: block;
+        line-height: 27px;
+    }
+    
+    .menu ul li a{
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    
+    .logo a{
+        font-size: 1.3em;
+    }
+
+    .beranda {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-home {
+        width: 35%;
+        margin-top: 3em; 
+        margin-left: 0.75em;
+    }
+
+    .container-home h1 {
+        font-size: 1.1em;
+    }
+
+    .container-home h1 span p {
+        font-size: 2em;
+    }
+
+    .container-home h2 {
+        font-size: 1.1em;
+    }
+
+    .container-home p {
+        font-size: 1em;
+    }
+
+    .container-home button {
+        width: 40%;
+    }
+
+    .container-home button a {
+        font-size: 1.1em;
+    }
+
+    .container-image {
+        position: absolute;
+        top: 18rem;
+        right: 2.5em;
+        width: 100%;
+        scale: 0.7;
+        margin: 0 auto;
+    }
+
+    .container-image::after {
+        display: none;
+    }
+
+    .tentang {
+        margin: 18em 0.75em 0em 0.75em;
+        width: 90%;
+    }
+
+    .container-about h1, h2 {
+        font-size: 22px;
+    }
+
+    .container-about p {
+        font-size: 16px;
+    }
+
+    .container-about article {
+        font-size: 16px;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .list ul li {
+        font-size: 1em;
+    }
+
+    .list .list-right {
+        margin: 0;
+    }
+
+    .portfolio {
+        margin-top: 12em;
+        height: 100%;
+    }
+
+    .container-prt {
+        width: 90%;
+    }
+
+    .title {
+        width: 90%;
+        margin-top: -2em;
+        padding-bottom: 3em;
+    }
+
+    
+    .title h1 {
+        font-size: 22px;
+    }
+    
+    .title p {
+        font-size: 1em;
+    }
+
+    .wrapper-card {
+        width: 90%;
+        padding-top: 2em;
+        padding-bottom: 4em;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-bottom: -8em;
+    }
+
+    .desk h4 {
+        font-size: 18px;
+    }
+
+    .desk p {
+        font-size: 15px;
+    }
+
+    .container-cntc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3em;
+    }
+
+    .hubungi {
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+    .kontak h1 {
+        font-size: 22px;
+    }
+
+    .tautan h1 {
+        font-size: 24px;
+    }
+
+    .tautan p {
+        font-size: 16px;
+    }
+
+    .sosmed {
+        scale: 0.9;
+        position: absolute;
+        margin-top: 0.5em;
+    }
+
+    .formulir {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    footer .text p {
+        font-size: 12px;
+    }
+
+}
